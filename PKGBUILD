@@ -102,7 +102,7 @@ build() {
 	PKG_CONFIG_PATH=/opt/OGRE-1.9/lib/pkgconfig:$PKG_CONFIG_PATH
 
         # Fix Boost Signals
-        sed -i -e 's/signals//g' rviz-release-release-melodic-rviz-1.13.1-0/CMakeLists.txt
+        sed -i -e 's/signals//g' ${_dir}/CMakeLists.txt
 
 	# Create the build directory.
 	[ -d ${srcdir}/build ] || mkdir ${srcdir}/build
